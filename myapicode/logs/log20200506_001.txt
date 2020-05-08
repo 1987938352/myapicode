@@ -1,0 +1,260 @@
+2020-05-06 18:30:35.744 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 18:30:37.347 +08:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 18:30:37.708 +08:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+ ---> System.Net.Sockets.SocketException (10048): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2020-05-06 18:31:00.181 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 18:31:00.647 +08:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 18:31:00.814 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 18:31:00.814 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 18:31:00.815 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 18:31:00.816 +08:00 [INF] Hosting environment: Development
+2020-05-06 18:31:00.817 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 18:31:01.292 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value application/json 50
+2020-05-06 18:31:01.336 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 18:31:01.352 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 18:31:01.482 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 18:31:01.496 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 135.1235ms
+2020-05-06 18:31:01.500 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 18:31:01.502 +08:00 [INF] Request finished in 213.3213ms 200 application/json; charset=utf-8
+2020-05-06 19:47:33.025 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 19:47:33.724 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 19:47:33.839 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 19:47:34.807 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 19:47:34.809 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 19:47:34.810 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 19:47:34.811 +08:00 [INF] Hosting environment: Development
+2020-05-06 19:47:34.812 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 19:47:36.125 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value application/json 50
+2020-05-06 19:47:36.250 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:47:36.274 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 19:47:36.487 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 19:47:36.514 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 232.3078ms
+2020-05-06 19:47:36.516 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:47:36.518 +08:00 [INF] Request finished in 396.9084ms 200 application/json; charset=utf-8
+2020-05-06 19:48:08.168 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 19:48:08.691 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 19:48:08.748 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 19:48:08.878 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 19:48:08.880 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 19:48:08.882 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 19:48:08.883 +08:00 [INF] Hosting environment: Development
+2020-05-06 19:48:08.885 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 19:50:06.443 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFvemhhbyIsImVtYWlsIjoibGFvemhhb0BxcS5jb20iLCJzdWIiOiIxIiwiZXhwIjoxNTg4NzY5MjU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDIifQ.M149coagfyUHPb09xbQoS6Qm4HZA6hRJsLSP5feCfXA application/json 50
+2020-05-06 19:50:06.498 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:50:06.521 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get(System.String) on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 19:50:06.873 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 19:50:06.885 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 356.9798ms
+2020-05-06 19:50:06.886 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:50:06.888 +08:00 [INF] Request finished in 447.6926ms 200 application/json; charset=utf-8
+2020-05-06 19:57:24.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-06 19:57:24.709 +08:00 [INF] Request finished in 57.9506ms 200 text/html;charset=utf-8
+2020-05-06 19:57:25.110 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-06 19:57:25.275 +08:00 [INF] Request finished in 164.8564ms 200 application/json;charset=utf-8
+2020-05-06 19:59:18.826 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFvemhhbyIsImVtYWlsIjoibGFvemhhb0BxcS5jb20iLCJzdWIiOiIxIiwiZXhwIjoxNTg4NzY5MjU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDIifQ.M149coagfyUHPb09xbQoS6Qm4HZA6hRJsLSP5feCfXA application/json 50
+2020-05-06 19:59:19.040 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-06 19:59:19.044 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2020-05-06 19:59:19.045 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:59:19.046 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get(System.String) on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 19:59:19.049 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 19:59:19.050 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 2.656ms
+2020-05-06 19:59:19.053 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 19:59:19.056 +08:00 [INF] Request finished in 230.423ms 200 application/json; charset=utf-8
+2020-05-06 20:01:00.786 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 20:01:01.292 +08:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 20:01:01.362 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 20:01:01.495 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 20:01:01.496 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 20:01:01.497 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 20:01:01.497 +08:00 [INF] Hosting environment: Development
+2020-05-06 20:01:01.498 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 20:02:00.268 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFvemhhbyIsImVtYWlsIjoibGFvemhhb0BxcS5jb20iLCJzdWIiOiIxIiwiZXhwIjoxNTg4NzY5MjU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDIifQ.M149coagfyUHPb09xbQoS6Qm4HZA6hRJsLSP5feCfXA application/json 50
+2020-05-06 20:02:00.470 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-06 20:02:00.475 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2020-05-06 20:02:00.477 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:02:00.501 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get(System.String) on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 20:02:00.681 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 20:02:00.693 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 186.0158ms
+2020-05-06 20:02:00.695 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:02:00.697 +08:00 [INF] Request finished in 433.325ms 200 application/json; charset=utf-8
+2020-05-06 20:02:35.075 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value  
+2020-05-06 20:02:35.080 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:02:35.083 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 20:02:35.090 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 5.771ms
+2020-05-06 20:02:35.092 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:02:35.191 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'KeySize')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at myapicode.Controllers.ValueController.Get() in C:\Users\Administrator\source\repos\myapicode\myapicode\Controllers\ValueController.cs:line 51
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-05-06 20:02:35.393 +08:00 [ERR] IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'KeySize')
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'KeySize')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at myapicode.Controllers.ValueController.Get() in C:\Users\Administrator\source\repos\myapicode\myapicode\Controllers\ValueController.cs:line 51
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-05-06 20:02:35.406 +08:00 [INF] Request finished in 331.2736ms 500 application/json
+2020-05-06 20:03:20.751 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 20:03:21.342 +08:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 20:03:21.410 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 20:03:21.541 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 20:03:21.541 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 20:03:21.542 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 20:03:21.542 +08:00 [INF] Hosting environment: Development
+2020-05-06 20:03:21.543 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 20:04:11.428 +08:00 [INF] Application is shutting down...
+2020-05-06 20:04:29.753 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 20:04:30.235 +08:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 20:04:30.297 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 20:04:30.477 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 20:04:30.478 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 20:04:30.480 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 20:04:30.481 +08:00 [INF] Hosting environment: Development
+2020-05-06 20:04:30.482 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 20:04:46.683 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value  
+2020-05-06 20:04:46.741 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:04:46.759 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 20:04:46.864 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 20:04:46.878 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 112.2259ms
+2020-05-06 20:04:46.879 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:04:46.881 +08:00 [INF] Request finished in 200.5142ms 200 application/json; charset=utf-8
+2020-05-06 20:05:11.505 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFvemhhbyIsImVtYWlsIjoibGFvemhhb0BxcS5jb20iLCJzdWIiOiIxIiwiZXhwIjoxNTg4NzcwMjg2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.cEgxCzn9JnQhhY7KBNbqOsbgaKVrWnYMxp75VP-JRdo application/json 50
+2020-05-06 20:05:11.589 +08:00 [INF] Successfully validated the token.
+2020-05-06 20:05:11.590 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:05:11.600 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get(System.String) on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 20:05:11.746 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 20:05:11.755 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 153.8524ms
+2020-05-06 20:05:11.760 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:05:11.761 +08:00 [INF] Request finished in 255.6582ms 200 application/json; charset=utf-8
+2020-05-06 20:11:46.125 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 20:11:46.672 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 20:11:46.739 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 20:11:46.933 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 20:11:46.933 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 20:11:46.934 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 20:11:46.934 +08:00 [INF] Hosting environment: Development
+2020-05-06 20:11:46.935 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 20:11:57.824 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-06 20:11:58.368 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-06 20:11:58.418 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 20:11:58.540 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-06 20:11:58.541 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-06 20:11:58.541 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-06 20:11:58.542 +08:00 [INF] Hosting environment: Development
+2020-05-06 20:11:58.542 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-06 20:12:01.051 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/value/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFvemhhbyIsImVtYWlsIjoibGFvemhhb0BxcS5jb20iLCJzdWIiOiIxIiwiZXhwIjoxNTg4NzcwMjg2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.cEgxCzn9JnQhhY7KBNbqOsbgaKVrWnYMxp75VP-JRdo application/json 50
+2020-05-06 20:12:01.267 +08:00 [INF] Successfully validated the token.
+2020-05-06 20:12:01.268 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:12:01.293 +08:00 [INF] Route matched with {action = "Get", controller = "Value"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get(System.String) on controller myapicode.Controllers.ValueController (myapicode).
+2020-05-06 20:12:01.438 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-06 20:12:01.451 +08:00 [INF] Executed action myapicode.Controllers.ValueController.Get (myapicode) in 150.2542ms
+2020-05-06 20:12:01.453 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ValueController.Get (myapicode)'
+2020-05-06 20:12:01.454 +08:00 [INF] Request finished in 406.9938ms 200 application/json; charset=utf-8
+2020-05-06 21:30:45.648 +08:00 [INF] Application is shutting down...

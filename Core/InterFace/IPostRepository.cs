@@ -9,7 +9,7 @@ namespace Core.InterFace
   public  interface IPostRepository
     {
         Task<PaginatedList<Post>> GetAllPostsAsync(PostParameters postParameters);
-
+        Task<List<Post>> GetAllPost();
         Task<int> GetCount();
         void AddPost(Post post);
         Task<bool> SaveAsync();

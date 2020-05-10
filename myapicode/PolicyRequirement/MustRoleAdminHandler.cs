@@ -10,6 +10,7 @@ namespace myapicode.PolicyRequirement
     {
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, AdminRequirement requirement)
         {
+           
             context.Succeed(requirement);
             return Task.CompletedTask;
         }

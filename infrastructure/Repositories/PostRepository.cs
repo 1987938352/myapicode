@@ -76,5 +76,11 @@ namespace infrastructure.Repositories
             int count = await myContext.Post.CountAsync();
             return count;
         }
+
+        public Task<List<Post>> GetAllPost()
+        {
+            var listPost = myContext.Post.ToListAsync();
+            return listPost;
+        }
     }
 }

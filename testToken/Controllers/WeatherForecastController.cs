@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -18,10 +19,12 @@ namespace testToken.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IHttpContextAccessor httpContextAccessor;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
+            this.httpContextAccessor = httpContextAccessor;
         }
         [HttpGet]
         //[Authorize(Policy = "AdminClaim2")]
@@ -36,6 +39,13 @@ namespace testToken.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpPost]
+        public int Post()
+        {
+            var a = httpContextAccessor.HttpContext.Request;
+            var b = a.Form.Keys;
+            return 1;
         }
     }
 }

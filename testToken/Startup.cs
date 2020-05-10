@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,7 @@ namespace testToken
         {
             services.AddControllers();
 
+            services.AddHttpContextAccessor();
             services.AddAuthorization(o =>
             {//基于角色
                 o.AddPolicy("AdminOrUser", o =>
@@ -45,6 +47,7 @@ namespace testToken
                 //基于需要的Requirement\
                 o.AddPolicy("AdminRequireMent", o =>
                 {
+                    
                     o.Requirements.Add(new AdminRequirement() { Role = "Admin" });
                 });
             });

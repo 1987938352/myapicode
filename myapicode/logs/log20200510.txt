@@ -1,0 +1,1509 @@
+2020-05-10 14:48:35.572 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 14:48:37.392 +08:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 14:48:37.536 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 14:48:38.455 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 14:48:38.456 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 14:48:38.457 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 14:48:38.458 +08:00 [INF] Hosting environment: Development
+2020-05-10 14:48:38.458 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 14:48:44.908 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 14:48:45.032 +08:00 [INF] Request finished in 126.5546ms 200 text/html;charset=utf-8
+2020-05-10 14:48:45.333 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 14:48:45.333 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 14:48:45.336 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 14:48:45.428 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 14:48:45.434 +08:00 [INF] Request finished in 98.3895ms 200 text/css
+2020-05-10 14:48:45.454 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 14:48:45.462 +08:00 [INF] Request finished in 129.4049ms 200 application/javascript
+2020-05-10 14:48:45.986 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 14:48:46.001 +08:00 [INF] Request finished in 667.9191ms 200 application/javascript
+2020-05-10 14:48:46.140 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 14:48:46.230 +08:00 [INF] Request finished in 89.627ms 404 
+2020-05-10 14:48:46.239 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 14:48:46.242 +08:00 [INF] Request finished in 2.6868ms 404 
+2020-05-10 14:48:46.380 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 14:48:46.384 +08:00 [INF] Request finished in 4.5405ms 404 
+2020-05-10 14:48:46.390 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 14:48:46.392 +08:00 [INF] Request finished in 1.8122ms 404 
+2020-05-10 14:48:46.485 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 14:48:46.650 +08:00 [INF] Request finished in 164.3747ms 200 application/json;charset=utf-8
+2020-05-10 14:49:22.264 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES  
+2020-05-10 14:49:22.268 +08:00 [INF] Request finished in 5.5481ms 307 
+2020-05-10 14:49:22.524 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 14:49:22.527 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 14:49:22.556 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 14:49:22.667 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 14:49:22.733 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 14:49:30.033 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 14:49:30.041 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 7477.417ms
+2020-05-10 14:49:30.044 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 14:49:30.049 +08:00 [INF] Request finished in 7525.3845ms 200 application/json; charset=utf-8
+2020-05-10 15:11:26.396 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:11:27.168 +08:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:11:27.262 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:11:27.502 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:11:27.504 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:11:27.505 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:11:27.506 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:11:27.507 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:11:29.149 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:11:29.258 +08:00 [INF] Request finished in 109.741ms 200 text/html;charset=utf-8
+2020-05-10 15:11:29.285 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:11:29.342 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:11:29.346 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:11:29.399 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:11:29.415 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:11:29.418 +08:00 [INF] Request finished in 72.3911ms 200 text/css
+2020-05-10 15:11:29.433 +08:00 [INF] Request finished in 90.3516ms 200 application/javascript
+2020-05-10 15:11:29.446 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:11:29.449 +08:00 [INF] Request finished in 163.7087ms 200 application/javascript
+2020-05-10 15:11:29.665 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:11:29.891 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:11:29.918 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:11:29.964 +08:00 [INF] Request finished in 299.179ms 200 application/json;charset=utf-8
+2020-05-10 15:11:30.101 +08:00 [INF] Request finished in 209.7973ms 404 
+2020-05-10 15:11:30.101 +08:00 [INF] Request finished in 183.5236ms 404 
+2020-05-10 15:11:30.120 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:11:30.123 +08:00 [INF] Request finished in 2.9749ms 404 
+2020-05-10 15:11:30.140 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:11:30.142 +08:00 [INF] Request finished in 2.4925ms 404 
+2020-05-10 15:12:06.453 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES  0
+2020-05-10 15:12:06.468 +08:00 [INF] Request finished in 15.9473ms 307 
+2020-05-10 15:12:06.503 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES  0
+2020-05-10 15:12:06.508 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:12:06.541 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:14:56.517 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:14:57.147 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:14:57.236 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:14:57.499 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:14:57.500 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:14:57.501 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:14:57.502 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:14:57.502 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:15:04.748 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:15:04.845 +08:00 [INF] Request finished in 98.7135ms 200 text/html;charset=utf-8
+2020-05-10 15:15:04.882 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:15:04.901 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:15:04.937 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:15:04.948 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:15:04.973 +08:00 [INF] Request finished in 72.0535ms 200 text/css
+2020-05-10 15:15:04.979 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:15:04.987 +08:00 [INF] Request finished in 49.7797ms 200 application/javascript
+2020-05-10 15:15:04.997 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:15:05.013 +08:00 [INF] Request finished in 131.484ms 200 application/javascript
+2020-05-10 15:15:05.234 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:15:05.327 +08:00 [INF] Request finished in 92.9186ms 404 
+2020-05-10 15:15:05.341 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:15:05.344 +08:00 [INF] Request finished in 2.965ms 404 
+2020-05-10 15:15:05.467 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:15:05.470 +08:00 [INF] Request finished in 2.9346ms 404 
+2020-05-10 15:15:05.474 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:15:05.475 +08:00 [INF] Request finished in 1.4508ms 404 
+2020-05-10 15:15:05.556 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:15:05.759 +08:00 [INF] Request finished in 203.5244ms 200 application/json;charset=utf-8
+2020-05-10 15:15:13.951 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:15:13.969 +08:00 [INF] Request finished in 18.176ms 200 text/html;charset=utf-8
+2020-05-10 15:15:14.407 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:15:14.409 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:15:14.428 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:15:14.429 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:15:14.434 +08:00 [INF] Request finished in 26.594ms 200 text/css
+2020-05-10 15:15:14.445 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:15:14.449 +08:00 [INF] Request finished in 20.1778ms 200 application/javascript
+2020-05-10 15:15:15.121 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:15:15.128 +08:00 [INF] Request finished in 719.2803ms 200 application/javascript
+2020-05-10 15:15:15.811 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:15:15.826 +08:00 [INF] Request finished in 15.1435ms 200 application/json;charset=utf-8
+2020-05-10 15:15:25.792 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2020-05-10 15:15:25.796 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 15:15:25.836 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-10 15:15:26.132 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:15:26.416 +08:00 [INF] Executed DbCommand (259ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 15:15:26.527 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-10 15:15:26.774 +08:00 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 15:15:26.908 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 15:15:26.927 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 1081.7922ms
+2020-05-10 15:15:26.930 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 15:15:26.935 +08:00 [INF] Request finished in 1143.0027ms 200 application/json; charset=utf-8
+2020-05-10 15:16:02.189 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES text/plain 14
+2020-05-10 15:16:02.193 +08:00 [INF] Request finished in 3.6765ms 307 
+2020-05-10 15:16:02.225 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES text/plain 14
+2020-05-10 15:16:02.227 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:16:02.231 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:16:21.938 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:16:22.749 +08:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:16:22.834 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:16:23.061 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:16:23.062 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:16:23.062 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:16:23.063 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:16:23.064 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:16:25.748 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:16:25.838 +08:00 [INF] Request finished in 90.9535ms 200 text/html;charset=utf-8
+2020-05-10 15:16:25.866 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:16:25.872 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:16:25.881 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:16:25.942 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:16:25.950 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:16:25.988 +08:00 [INF] Request finished in 120.5804ms 200 application/javascript
+2020-05-10 15:16:25.984 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:16:25.994 +08:00 [INF] Request finished in 128.6996ms 200 application/javascript
+2020-05-10 15:16:25.968 +08:00 [INF] Request finished in 87.115ms 200 text/css
+2020-05-10 15:16:26.205 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:16:26.259 +08:00 [INF] Request finished in 53.4303ms 404 
+2020-05-10 15:16:26.267 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:16:26.270 +08:00 [INF] Request finished in 2.1051ms 404 
+2020-05-10 15:16:26.392 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:16:26.396 +08:00 [INF] Request finished in 3.2227ms 404 
+2020-05-10 15:16:26.399 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:16:26.401 +08:00 [INF] Request finished in 1.9174ms 404 
+2020-05-10 15:16:26.488 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:16:26.670 +08:00 [INF] Request finished in 181.9104ms 200 application/json;charset=utf-8
+2020-05-10 15:16:31.273 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:16:31.278 +08:00 [INF] Request finished in 4.7982ms 307 
+2020-05-10 15:16:31.304 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:16:31.316 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:16:31.350 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:16:31.659 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-10 15:16:31.671 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 310.4096ms
+2020-05-10 15:16:31.673 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:16:31.676 +08:00 [INF] Request finished in 371.608ms 400 application/problem+json; charset=utf-8
+2020-05-10 15:17:04.759 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:17:05.398 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:17:05.492 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:17:05.730 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:17:05.731 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:17:05.732 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:17:05.732 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:17:05.733 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:17:07.315 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:17:07.403 +08:00 [INF] Request finished in 88.6516ms 200 text/html;charset=utf-8
+2020-05-10 15:17:07.434 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:17:07.460 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:17:07.463 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:17:07.561 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:17:07.565 +08:00 [INF] Request finished in 104.2837ms 200 text/css
+2020-05-10 15:17:07.566 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:17:07.589 +08:00 [INF] Request finished in 125.6374ms 200 application/javascript
+2020-05-10 15:17:07.590 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:17:07.595 +08:00 [INF] Request finished in 160.656ms 200 application/javascript
+2020-05-10 15:17:07.756 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:17:07.808 +08:00 [INF] Request finished in 52.357ms 404 
+2020-05-10 15:17:07.824 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:17:07.825 +08:00 [INF] Request finished in 1.788ms 404 
+2020-05-10 15:17:07.960 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:17:07.966 +08:00 [INF] Request finished in 5.2967ms 404 
+2020-05-10 15:17:07.971 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:17:07.973 +08:00 [INF] Request finished in 2.1296ms 404 
+2020-05-10 15:17:08.057 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:17:08.241 +08:00 [INF] Request finished in 184.2182ms 200 application/json;charset=utf-8
+2020-05-10 15:17:10.054 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:17:10.063 +08:00 [INF] Request finished in 10.2005ms 307 
+2020-05-10 15:17:10.079 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:17:10.082 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:17:10.113 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:23:21.223 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 15:23:21.239 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 371109.9881ms
+2020-05-10 15:23:21.242 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:23:21.244 +08:00 [INF] Request finished in 371160.6095ms 200 application/json; charset=utf-8
+2020-05-10 15:24:47.345 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:24:47.359 +08:00 [INF] Request finished in 7.0334ms 307 
+2020-05-10 15:24:47.365 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:24:47.373 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:24:47.375 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:25:06.895 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 15:25:06.901 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 19522.4594ms
+2020-05-10 15:25:06.903 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:25:06.905 +08:00 [INF] Request finished in 19539.3316ms 200 application/json; charset=utf-8
+2020-05-10 15:25:30.205 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:25:30.828 +08:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:25:30.917 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:25:31.179 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:25:31.180 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:25:31.181 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:25:31.181 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:25:31.182 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:25:35.895 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:25:35.991 +08:00 [INF] Request finished in 98.2183ms 200 text/html;charset=utf-8
+2020-05-10 15:25:36.052 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:25:36.065 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:25:36.084 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:25:36.149 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:25:36.178 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:25:36.204 +08:00 [INF] Request finished in 139.2216ms 200 application/javascript
+2020-05-10 15:25:36.201 +08:00 [INF] Request finished in 116.9731ms 200 text/css
+2020-05-10 15:25:36.222 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:25:36.234 +08:00 [INF] Request finished in 182.2165ms 200 application/javascript
+2020-05-10 15:25:36.447 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:25:36.505 +08:00 [INF] Request finished in 58.1878ms 404 
+2020-05-10 15:25:36.514 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:25:36.518 +08:00 [INF] Request finished in 4.0966ms 404 
+2020-05-10 15:25:36.748 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:25:36.753 +08:00 [INF] Request finished in 4.9866ms 404 
+2020-05-10 15:25:36.761 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:25:36.763 +08:00 [INF] Request finished in 2.1076ms 404 
+2020-05-10 15:25:36.875 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:25:37.080 +08:00 [INF] Request finished in 204.7304ms 200 application/json;charset=utf-8
+2020-05-10 15:25:38.110 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:25:38.136 +08:00 [INF] Request finished in 26.602ms 307 
+2020-05-10 15:25:38.158 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:25:38.161 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:25:38.200 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:25:45.011 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 15:25:45.031 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 6818.5561ms
+2020-05-10 15:25:45.034 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:25:45.036 +08:00 [INF] Request finished in 6877.3855ms 200 application/json; charset=utf-8
+2020-05-10 15:26:33.616 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:26:33.623 +08:00 [INF] Request finished in 4.0882ms 307 
+2020-05-10 15:26:33.662 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:26:33.666 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:26:33.668 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:29:36.501 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:29:37.131 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:29:37.237 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:29:37.473 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:29:37.474 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:29:37.475 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:29:37.476 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:29:37.476 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:29:42.996 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:29:43.085 +08:00 [INF] Request finished in 92.0858ms 200 text/html;charset=utf-8
+2020-05-10 15:29:43.123 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:29:43.123 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:29:43.137 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:29:43.189 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:29:43.190 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:29:43.201 +08:00 [INF] Request finished in 64.2254ms 200 text/css
+2020-05-10 15:29:43.207 +08:00 [INF] Request finished in 84.2063ms 200 application/javascript
+2020-05-10 15:29:43.227 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:29:43.239 +08:00 [INF] Request finished in 116.4578ms 200 application/javascript
+2020-05-10 15:29:43.381 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:29:43.436 +08:00 [INF] Request finished in 56.2165ms 404 
+2020-05-10 15:29:43.446 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:29:43.448 +08:00 [INF] Request finished in 2.4368ms 404 
+2020-05-10 15:29:43.601 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:29:43.608 +08:00 [INF] Request finished in 7.2218ms 404 
+2020-05-10 15:29:43.614 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:29:43.616 +08:00 [INF] Request finished in 2.7352ms 404 
+2020-05-10 15:29:43.706 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:29:43.807 +08:00 [INF] Request finished in 100.9341ms 200 application/json;charset=utf-8
+2020-05-10 15:29:47.544 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:29:47.552 +08:00 [INF] Request finished in 8.7643ms 307 
+2020-05-10 15:29:47.598 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:29:47.603 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:29:47.661 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:32:27.182 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:32:27.769 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:32:27.860 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:32:28.096 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:32:28.097 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:32:28.098 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:32:28.098 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:32:28.099 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:32:33.487 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:32:33.582 +08:00 [INF] Request finished in 95.6004ms 200 text/html;charset=utf-8
+2020-05-10 15:32:33.636 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:32:33.636 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:32:33.646 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:32:33.707 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:32:33.714 +08:00 [INF] Request finished in 70.0921ms 200 text/css
+2020-05-10 15:32:33.724 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:32:33.729 +08:00 [INF] Request finished in 93.835ms 200 application/javascript
+2020-05-10 15:32:33.762 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:32:33.768 +08:00 [INF] Request finished in 132.069ms 200 application/javascript
+2020-05-10 15:32:33.993 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:32:34.052 +08:00 [INF] Request finished in 59.1984ms 404 
+2020-05-10 15:32:34.064 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:32:34.066 +08:00 [INF] Request finished in 2.1938ms 404 
+2020-05-10 15:32:34.190 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:32:34.196 +08:00 [INF] Request finished in 6.3307ms 404 
+2020-05-10 15:32:34.200 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:32:34.202 +08:00 [INF] Request finished in 1.8569ms 404 
+2020-05-10 15:32:34.288 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:32:34.484 +08:00 [INF] Request finished in 195.8945ms 200 application/json;charset=utf-8
+2020-05-10 15:32:46.903 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 15:32:46.924 +08:00 [INF] Request finished in 21.24ms 307 
+2020-05-10 15:32:46.975 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 15:32:46.984 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:32:47.028 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:32:47.334 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:32:47.388 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 15:32:48.145 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 15:32:48.154 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 1117.2297ms
+2020-05-10 15:32:48.157 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:32:48.163 +08:00 [INF] Request finished in 1188.0301ms 200 application/json; charset=utf-8
+2020-05-10 15:33:02.105 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 15:33:02.117 +08:00 [INF] Request finished in 12.4434ms 307 
+2020-05-10 15:33:02.124 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 15:33:02.129 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:33:02.133 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:33:02.148 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:33:02.160 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 15:33:10.167 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 15:33:10.169 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 8033.1176ms
+2020-05-10 15:33:10.179 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:33:10.181 +08:00 [INF] Request finished in 8057.9792ms 200 application/json; charset=utf-8
+2020-05-10 15:33:22.996 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:33:23.000 +08:00 [INF] Request finished in 3.8239ms 307 
+2020-05-10 15:33:23.002 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:33:23.004 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:33:23.034 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:33:53.688 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:33:54.314 +08:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:33:54.427 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:33:54.698 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:33:54.698 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:33:54.699 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:33:54.700 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:33:54.700 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:33:56.754 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:33:56.846 +08:00 [INF] Request finished in 94.0799ms 200 text/html;charset=utf-8
+2020-05-10 15:33:56.872 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:33:56.883 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:33:56.889 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:33:56.953 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:33:56.953 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:33:56.971 +08:00 [INF] Request finished in 80.3161ms 200 text/css
+2020-05-10 15:33:56.988 +08:00 [INF] Request finished in 105.0011ms 200 application/javascript
+2020-05-10 15:33:56.979 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:33:57.003 +08:00 [INF] Request finished in 130.4265ms 200 application/javascript
+2020-05-10 15:33:57.283 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:33:57.356 +08:00 [INF] Request finished in 73.9208ms 404 
+2020-05-10 15:33:57.389 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:33:57.391 +08:00 [INF] Request finished in 2.2378ms 404 
+2020-05-10 15:33:57.516 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:33:57.520 +08:00 [INF] Request finished in 4.3561ms 404 
+2020-05-10 15:33:57.524 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:33:57.526 +08:00 [INF] Request finished in 1.9757ms 404 
+2020-05-10 15:33:57.624 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:33:57.726 +08:00 [INF] Request finished in 101.3696ms 200 application/json;charset=utf-8
+2020-05-10 15:34:33.206 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 15:34:33.211 +08:00 [INF] Request finished in 12.9885ms 307 
+2020-05-10 15:34:33.243 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 15:34:33.247 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:34:33.283 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:34:33.577 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:34:33.626 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 15:35:09.646 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 15:35:09.655 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 36362.785ms
+2020-05-10 15:35:09.658 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:35:09.662 +08:00 [INF] Request finished in 36419.5579ms 200 application/json; charset=utf-8
+2020-05-10 15:35:29.200 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:35:29.203 +08:00 [INF] Request finished in 3.9111ms 307 
+2020-05-10 15:35:29.206 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:35:29.212 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:35:29.230 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:50:51.283 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:50:51.883 +08:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:50:51.973 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:50:52.206 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:50:52.207 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:50:52.208 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:50:52.208 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:50:52.209 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:50:54.240 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:50:54.360 +08:00 [INF] Request finished in 121.7288ms 200 text/html;charset=utf-8
+2020-05-10 15:50:54.406 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:50:54.440 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:50:54.450 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:50:54.536 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:50:54.540 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:50:54.560 +08:00 [INF] Request finished in 110.1592ms 200 application/javascript
+2020-05-10 15:50:54.560 +08:00 [INF] Request finished in 120.0134ms 200 text/css
+2020-05-10 15:50:54.571 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:50:54.576 +08:00 [INF] Request finished in 169.6997ms 200 application/javascript
+2020-05-10 15:50:54.861 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:50:54.922 +08:00 [INF] Request finished in 61.5502ms 404 
+2020-05-10 15:50:54.930 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:50:54.933 +08:00 [INF] Request finished in 2.8617ms 404 
+2020-05-10 15:50:55.108 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:50:55.117 +08:00 [INF] Request finished in 8.8644ms 404 
+2020-05-10 15:50:55.121 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:50:55.124 +08:00 [INF] Request finished in 2.3877ms 404 
+2020-05-10 15:50:55.218 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:50:55.387 +08:00 [INF] Request finished in 168.5806ms 200 application/json;charset=utf-8
+2020-05-10 15:50:58.224 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a  
+2020-05-10 15:50:58.228 +08:00 [INF] Request finished in 5.2149ms 307 
+2020-05-10 15:50:58.264 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a  
+2020-05-10 15:50:58.267 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 15:50:58.312 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:51:18.629 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 20306.0644ms
+2020-05-10 15:51:18.633 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 15:51:18.637 +08:00 [INF] Request finished in 20372.6688ms 200 
+2020-05-10 15:53:49.803 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:53:50.447 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:53:50.535 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:53:50.778 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:53:50.779 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:53:50.780 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:53:50.780 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:53:50.781 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:53:52.548 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:53:52.635 +08:00 [INF] Request finished in 89.4008ms 200 text/html;charset=utf-8
+2020-05-10 15:53:52.661 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:53:52.674 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:53:52.682 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:53:52.740 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:53:52.741 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:53:52.756 +08:00 [INF] Request finished in 74.0007ms 200 text/css
+2020-05-10 15:53:52.747 +08:00 [INF] Request finished in 73.4153ms 200 application/javascript
+2020-05-10 15:53:52.774 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:53:52.786 +08:00 [INF] Request finished in 124.8684ms 200 application/javascript
+2020-05-10 15:53:52.915 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:53:52.967 +08:00 [INF] Request finished in 51.3266ms 404 
+2020-05-10 15:53:52.975 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:53:52.977 +08:00 [INF] Request finished in 2.1505ms 404 
+2020-05-10 15:53:53.121 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:53:53.128 +08:00 [INF] Request finished in 7.7654ms 404 
+2020-05-10 15:53:53.134 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:53:53.137 +08:00 [INF] Request finished in 2.3752ms 404 
+2020-05-10 15:53:53.218 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:53:53.391 +08:00 [INF] Request finished in 173.5504ms 200 application/json;charset=utf-8
+2020-05-10 15:54:10.198 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES  
+2020-05-10 15:54:10.203 +08:00 [INF] Request finished in 4.7703ms 307 
+2020-05-10 15:54:10.216 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 15:54:10.218 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:54:10.241 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:54:10.633 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:54:10.683 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 15:54:53.690 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 15:54:53.702 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 43450.0576ms
+2020-05-10 15:54:53.708 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:54:53.716 +08:00 [INF] Request finished in 43498.3858ms 200 application/json; charset=utf-8
+2020-05-10 15:55:08.469 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES  
+2020-05-10 15:55:08.472 +08:00 [INF] Request finished in 3.1652ms 307 
+2020-05-10 15:55:08.477 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 15:55:08.487 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:55:08.495 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:55:08.511 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:55:08.620 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 15:55:39.570 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 15:55:39.572 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 31074.4391ms
+2020-05-10 15:55:39.576 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 15:55:39.579 +08:00 [INF] Request finished in 31102.4069ms 200 application/json; charset=utf-8
+2020-05-10 15:56:02.387 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:56:02.392 +08:00 [INF] Request finished in 4.7886ms 307 
+2020-05-10 15:56:02.396 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:56:02.398 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:56:02.425 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:56:38.763 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:56:39.373 +08:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:56:39.462 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:56:39.690 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:56:39.691 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:56:39.693 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:56:39.694 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:56:39.695 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:56:41.408 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:56:41.496 +08:00 [INF] Request finished in 89.2351ms 200 text/html;charset=utf-8
+2020-05-10 15:56:41.523 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:56:41.531 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:56:41.541 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:56:41.590 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:56:41.615 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:56:41.650 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:56:41.654 +08:00 [INF] Request finished in 130.8033ms 200 application/javascript
+2020-05-10 15:56:41.616 +08:00 [INF] Request finished in 74.5032ms 200 text/css
+2020-05-10 15:56:41.650 +08:00 [INF] Request finished in 119.2029ms 200 application/javascript
+2020-05-10 15:56:41.817 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:56:41.872 +08:00 [INF] Request finished in 55.0776ms 404 
+2020-05-10 15:56:41.880 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:56:41.882 +08:00 [INF] Request finished in 2.3804ms 404 
+2020-05-10 15:56:41.999 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:56:42.002 +08:00 [INF] Request finished in 3.406ms 404 
+2020-05-10 15:56:42.006 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:56:42.009 +08:00 [INF] Request finished in 3.417ms 404 
+2020-05-10 15:56:42.095 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:56:42.247 +08:00 [INF] Request finished in 152.3561ms 200 application/json;charset=utf-8
+2020-05-10 15:56:56.739 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:56:56.757 +08:00 [INF] Request finished in 18.4117ms 307 
+2020-05-10 15:56:56.842 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:56:56.845 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:56:56.874 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:58:09.629 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 15:58:10.274 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 15:58:10.358 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 15:58:10.592 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 15:58:10.593 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 15:58:10.593 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 15:58:10.594 +08:00 [INF] Hosting environment: Development
+2020-05-10 15:58:10.595 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 15:58:13.835 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 15:58:13.937 +08:00 [INF] Request finished in 101.7127ms 200 text/html;charset=utf-8
+2020-05-10 15:58:13.967 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 15:58:13.978 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 15:58:13.998 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 15:58:14.050 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 15:58:14.060 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 15:58:14.068 +08:00 [INF] Request finished in 69.6878ms 200 application/javascript
+2020-05-10 15:58:14.068 +08:00 [INF] Request finished in 89.0203ms 200 text/css
+2020-05-10 15:58:14.093 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 15:58:14.101 +08:00 [INF] Request finished in 135.7181ms 200 application/javascript
+2020-05-10 15:58:14.300 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:58:14.362 +08:00 [INF] Request finished in 62.4366ms 404 
+2020-05-10 15:58:14.414 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 15:58:14.416 +08:00 [INF] Request finished in 1.5618ms 404 
+2020-05-10 15:58:14.558 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:58:14.561 +08:00 [INF] Request finished in 3.5317ms 404 
+2020-05-10 15:58:14.565 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 15:58:14.566 +08:00 [INF] Request finished in 1.1102ms 404 
+2020-05-10 15:58:14.661 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 15:58:14.859 +08:00 [INF] Request finished in 197.9403ms 200 application/json;charset=utf-8
+2020-05-10 15:58:16.957 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 15:58:16.961 +08:00 [INF] Request finished in 3.8429ms 307 
+2020-05-10 15:58:16.974 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 15:58:16.977 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:58:17.013 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 15:59:25.516 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 15:59:25.530 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 68505.8269ms
+2020-05-10 15:59:25.532 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 15:59:25.534 +08:00 [INF] Request finished in 68558.2587ms 200 application/json; charset=utf-8
+2020-05-10 16:00:05.630 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES  
+2020-05-10 16:00:05.632 +08:00 [INF] Request finished in 2.226ms 307 
+2020-05-10 16:00:05.644 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 16:00:05.647 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:00:05.657 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:00:05.735 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:00:05.788 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 16:03:42.243 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 16:03:42.246 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 216584.234ms
+2020-05-10 16:03:42.249 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:03:42.255 +08:00 [INF] Request finished in 216608.3615ms 200 application/json; charset=utf-8
+2020-05-10 16:06:28.787 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:06:29.860 +08:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:06:30.072 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:06:31.007 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:06:31.012 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:06:31.012 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:06:31.013 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:06:31.014 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:06:36.966 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:06:37.053 +08:00 [INF] Request finished in 90.8483ms 200 text/html;charset=utf-8
+2020-05-10 16:06:37.114 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:06:37.114 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:06:37.149 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:06:37.216 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:06:37.225 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:06:37.228 +08:00 [INF] Request finished in 114.5671ms 200 application/javascript
+2020-05-10 16:06:37.228 +08:00 [INF] Request finished in 79.7428ms 200 text/css
+2020-05-10 16:06:37.243 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:06:37.245 +08:00 [INF] Request finished in 130.9085ms 200 application/javascript
+2020-05-10 16:06:37.397 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:06:37.475 +08:00 [INF] Request finished in 77.5174ms 404 
+2020-05-10 16:06:37.483 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:06:37.485 +08:00 [INF] Request finished in 1.3925ms 404 
+2020-05-10 16:06:37.648 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:06:37.651 +08:00 [INF] Request finished in 3.3169ms 404 
+2020-05-10 16:06:37.655 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:06:37.656 +08:00 [INF] Request finished in 1.0762ms 404 
+2020-05-10 16:06:37.767 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:06:37.916 +08:00 [INF] Request finished in 149.3672ms 200 application/json;charset=utf-8
+2020-05-10 16:06:44.219 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES  
+2020-05-10 16:06:44.247 +08:00 [INF] Request finished in 27.6027ms 307 
+2020-05-10 16:06:44.269 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 16:06:44.272 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:06:44.298 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:06:44.568 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:06:44.610 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 16:07:20.238 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 16:07:20.249 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 35942.245ms
+2020-05-10 16:07:20.251 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:07:20.255 +08:00 [INF] Request finished in 35986.3036ms 200 application/json; charset=utf-8
+2020-05-10 16:07:49.515 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES application/json 14
+2020-05-10 16:07:49.521 +08:00 [INF] Request finished in 2.582ms 307 
+2020-05-10 16:07:49.526 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES application/json 14
+2020-05-10 16:07:49.531 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 16:07:49.547 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:10:23.514 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:10:24.651 +08:00 [INF] Executed DbCommand (547ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:10:24.742 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:10:24.997 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:10:25.001 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:10:25.003 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:10:25.003 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:10:25.004 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:10:26.794 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:10:26.880 +08:00 [INF] Request finished in 88.4038ms 200 text/html;charset=utf-8
+2020-05-10 16:10:26.908 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:10:26.916 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:10:26.930 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:10:26.964 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:10:26.972 +08:00 [INF] Request finished in 42.5366ms 200 text/css
+2020-05-10 16:10:26.995 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:10:27.026 +08:00 [INF] Request finished in 109.5082ms 200 application/javascript
+2020-05-10 16:10:27.032 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:10:27.038 +08:00 [INF] Request finished in 130.2414ms 200 application/javascript
+2020-05-10 16:10:27.239 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:10:27.292 +08:00 [INF] Request finished in 52.971ms 404 
+2020-05-10 16:10:27.302 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:10:27.305 +08:00 [INF] Request finished in 2.9456ms 404 
+2020-05-10 16:10:27.439 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:10:27.444 +08:00 [INF] Request finished in 4.8264ms 404 
+2020-05-10 16:10:27.448 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:10:27.451 +08:00 [INF] Request finished in 2.468ms 404 
+2020-05-10 16:10:27.528 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:10:27.655 +08:00 [INF] Request finished in 127.2213ms 200 application/json;charset=utf-8
+2020-05-10 16:10:38.495 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:10:38.500 +08:00 [INF] Request finished in 4.6765ms 307 
+2020-05-10 16:10:38.563 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:10:38.566 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:38.566 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:38.569 +08:00 [INF] Request finished in 6.1695ms 405 
+2020-05-10 16:10:47.030 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:10:47.040 +08:00 [INF] Request finished in 11.2796ms 307 
+2020-05-10 16:10:47.063 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:10:47.067 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:47.079 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:47.091 +08:00 [INF] Request finished in 28.5052ms 405 
+2020-05-10 16:10:48.150 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:10:48.155 +08:00 [INF] Request finished in 5.3773ms 307 
+2020-05-10 16:10:48.158 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:10:48.160 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:48.162 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:10:48.163 +08:00 [INF] Request finished in 5.4492ms 405 
+2020-05-10 16:10:58.097 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:10:58.109 +08:00 [INF] Request finished in 10.6682ms 307 
+2020-05-10 16:10:58.114 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:10:58.124 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:10:58.166 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:11:20.740 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 22560.4148ms
+2020-05-10 16:11:20.743 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:11:20.747 +08:00 [INF] Request finished in 22632.9167ms 200 
+2020-05-10 16:11:37.530 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:11:38.190 +08:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:11:38.275 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:11:38.509 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:11:38.515 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:11:38.516 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:11:38.517 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:11:38.518 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:11:39.964 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:11:40.056 +08:00 [INF] Request finished in 94.0898ms 200 text/html;charset=utf-8
+2020-05-10 16:11:40.091 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:11:40.094 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:11:40.162 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:11:40.174 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:11:40.183 +08:00 [INF] Request finished in 89.4646ms 200 text/css
+2020-05-10 16:11:40.220 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:11:40.244 +08:00 [INF] Request finished in 69.9774ms 200 application/javascript
+2020-05-10 16:11:40.256 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:11:40.264 +08:00 [INF] Request finished in 172.2601ms 200 application/javascript
+2020-05-10 16:11:40.396 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:11:40.471 +08:00 [INF] Request finished in 75.1517ms 404 
+2020-05-10 16:11:40.481 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:11:40.483 +08:00 [INF] Request finished in 2.4925ms 404 
+2020-05-10 16:11:40.627 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:11:40.631 +08:00 [INF] Request finished in 3.4089ms 404 
+2020-05-10 16:11:40.662 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:11:40.665 +08:00 [INF] Request finished in 2.5497ms 404 
+2020-05-10 16:11:40.752 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:11:40.929 +08:00 [INF] Request finished in 177.6803ms 200 application/json;charset=utf-8
+2020-05-10 16:11:54.618 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:11:54.625 +08:00 [INF] Request finished in 8.5ms 307 
+2020-05-10 16:11:54.697 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:11:54.701 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:11:54.730 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:16:40.969 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:16:41.645 +08:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:16:41.729 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:16:41.966 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:16:41.967 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:16:41.968 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:16:41.968 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:16:41.969 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:16:43.522 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:16:43.618 +08:00 [INF] Request finished in 97.3708ms 200 text/html;charset=utf-8
+2020-05-10 16:16:43.669 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:16:43.670 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:16:43.691 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:16:43.784 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:16:43.787 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:16:43.790 +08:00 [INF] Request finished in 99.8334ms 200 text/css
+2020-05-10 16:16:43.813 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:16:43.835 +08:00 [INF] Request finished in 165.7625ms 200 application/javascript
+2020-05-10 16:16:43.838 +08:00 [INF] Request finished in 168.7228ms 200 application/javascript
+2020-05-10 16:16:43.949 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:16:44.002 +08:00 [INF] Request finished in 52.2826ms 404 
+2020-05-10 16:16:44.020 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:16:44.023 +08:00 [INF] Request finished in 2.895ms 404 
+2020-05-10 16:16:44.159 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:16:44.163 +08:00 [INF] Request finished in 4.2329ms 404 
+2020-05-10 16:16:44.167 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:16:44.169 +08:00 [INF] Request finished in 2.3771ms 404 
+2020-05-10 16:16:44.253 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:16:44.415 +08:00 [INF] Request finished in 162.1996ms 200 application/json;charset=utf-8
+2020-05-10 16:17:12.605 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:17:12.617 +08:00 [INF] Request finished in 10.4233ms 307 
+2020-05-10 16:17:12.656 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:17:12.660 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:17:12.688 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:23:00.077 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:23:00.671 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:23:00.759 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:23:00.997 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:23:00.998 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:23:00.998 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:23:00.999 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:23:00.999 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:23:03.374 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:23:03.458 +08:00 [INF] Request finished in 85.541ms 200 text/html;charset=utf-8
+2020-05-10 16:23:03.485 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:23:03.485 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:23:03.506 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:23:03.578 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:23:03.578 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:23:03.603 +08:00 [INF] Request finished in 97.3628ms 200 text/css
+2020-05-10 16:23:03.613 +08:00 [INF] Request finished in 128.2132ms 200 application/javascript
+2020-05-10 16:23:03.627 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:23:03.629 +08:00 [INF] Request finished in 143.6163ms 200 application/javascript
+2020-05-10 16:23:03.777 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:23:03.826 +08:00 [INF] Request finished in 48.8366ms 404 
+2020-05-10 16:23:03.834 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:23:03.837 +08:00 [INF] Request finished in 3.0149ms 404 
+2020-05-10 16:23:04.046 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:23:04.051 +08:00 [INF] Request finished in 4.5603ms 404 
+2020-05-10 16:23:04.054 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:23:04.056 +08:00 [INF] Request finished in 1.7983ms 404 
+2020-05-10 16:23:04.143 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:23:04.306 +08:00 [INF] Request finished in 162.5339ms 200 application/json;charset=utf-8
+2020-05-10 16:23:06.739 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:23:06.758 +08:00 [INF] Request finished in 19.1961ms 307 
+2020-05-10 16:23:06.782 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:23:06.786 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:23:06.824 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:27:51.905 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:27:53.470 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:27:53.686 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:27:54.418 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:27:54.422 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:27:54.423 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:27:54.423 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:27:54.424 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:28:00.131 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:28:00.250 +08:00 [INF] Request finished in 119.3576ms 200 text/html;charset=utf-8
+2020-05-10 16:28:00.312 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:28:00.326 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:28:00.419 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:28:00.504 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:28:00.509 +08:00 [INF] Request finished in 90.1629ms 200 text/css
+2020-05-10 16:28:00.525 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:28:00.551 +08:00 [INF] Request finished in 224.8715ms 200 application/javascript
+2020-05-10 16:28:00.576 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:28:00.581 +08:00 [INF] Request finished in 268.6706ms 200 application/javascript
+2020-05-10 16:28:00.789 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:28:01.086 +08:00 [INF] Request finished in 297.4885ms 404 
+2020-05-10 16:28:01.095 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:28:01.098 +08:00 [INF] Request finished in 2.5988ms 404 
+2020-05-10 16:28:01.234 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:28:01.238 +08:00 [INF] Request finished in 3.7139ms 404 
+2020-05-10 16:28:01.242 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:28:01.244 +08:00 [INF] Request finished in 1.9335ms 404 
+2020-05-10 16:28:01.340 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:28:01.529 +08:00 [INF] Request finished in 188.4575ms 200 application/json;charset=utf-8
+2020-05-10 16:28:05.959 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:28:05.980 +08:00 [INF] Request finished in 21.9908ms 307 
+2020-05-10 16:28:06.018 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:28:06.025 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:28:06.255 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:28:37.365 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:28:37.972 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:28:38.060 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:28:38.307 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:28:38.308 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:28:38.309 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:28:38.310 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:28:38.310 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:28:39.947 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:28:40.056 +08:00 [INF] Request finished in 112.4627ms 200 text/html;charset=utf-8
+2020-05-10 16:28:40.087 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:28:40.102 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:28:40.107 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:28:40.177 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:28:40.204 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:28:40.228 +08:00 [INF] Request finished in 125.8094ms 200 application/javascript
+2020-05-10 16:28:40.213 +08:00 [INF] Request finished in 106.1436ms 200 text/css
+2020-05-10 16:28:40.222 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:28:40.252 +08:00 [INF] Request finished in 164.374ms 200 application/javascript
+2020-05-10 16:28:40.375 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:28:40.424 +08:00 [INF] Request finished in 49.2251ms 404 
+2020-05-10 16:28:40.432 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:28:40.436 +08:00 [INF] Request finished in 3.6318ms 404 
+2020-05-10 16:28:40.595 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:28:40.599 +08:00 [INF] Request finished in 4.0405ms 404 
+2020-05-10 16:28:40.603 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:28:40.605 +08:00 [INF] Request finished in 2.1315ms 404 
+2020-05-10 16:28:40.691 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:28:40.851 +08:00 [INF] Request finished in 160.2946ms 200 application/json;charset=utf-8
+2020-05-10 16:28:48.231 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:28:48.234 +08:00 [INF] Request finished in 3.5328ms 307 
+2020-05-10 16:28:48.253 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:28:48.261 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:28:48.293 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:29:04.454 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 16151.3187ms
+2020-05-10 16:29:04.458 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:29:04.462 +08:00 [INF] Request finished in 16209.0715ms 200 
+2020-05-10 16:29:13.502 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 16:29:13.507 +08:00 [INF] Request finished in 5.1317ms 307 
+2020-05-10 16:29:13.513 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 16:29:13.528 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:29:13.686 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:29:13.728 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:29:13.863 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 16:29:22.163 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 16:29:22.167 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 8478.0621ms
+2020-05-10 16:29:22.175 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:29:22.181 +08:00 [INF] Request finished in 8668.3638ms 200 application/json; charset=utf-8
+2020-05-10 16:29:26.150 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:29:26.158 +08:00 [INF] Request finished in 8.8732ms 307 
+2020-05-10 16:29:26.161 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:29:26.164 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:29:26.167 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:30:00.494 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 34321.1222ms
+2020-05-10 16:30:00.496 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:30:00.499 +08:00 [INF] Request finished in 34336.9105ms 200 
+2020-05-10 16:30:13.373 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 16:30:13.377 +08:00 [INF] Request finished in 3.7462ms 307 
+2020-05-10 16:30:13.381 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 16:30:13.388 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:30:13.392 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:30:13.415 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:30:13.432 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 16:30:22.922 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 16:30:22.924 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 9524.209ms
+2020-05-10 16:30:22.926 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:30:22.937 +08:00 [INF] Request finished in 9554.8516ms 200 application/json; charset=utf-8
+2020-05-10 16:30:38.128 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:30:38.129 +08:00 [INF] Request finished in 1.1278ms 307 
+2020-05-10 16:30:38.160 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:30:38.164 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:30:38.166 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:30:40.290 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 2117.7957ms
+2020-05-10 16:30:40.293 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:30:40.297 +08:00 [INF] Request finished in 2137.8342ms 200 
+2020-05-10 16:30:45.168 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:30:45.183 +08:00 [INF] Request finished in 15.123ms 307 
+2020-05-10 16:30:45.191 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:30:45.203 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:30:45.207 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:31:40.371 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:31:40.963 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:31:41.046 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:31:41.292 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:31:41.293 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:31:41.294 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:31:41.294 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:31:41.295 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:31:42.874 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:31:42.956 +08:00 [INF] Request finished in 84.3442ms 200 text/html;charset=utf-8
+2020-05-10 16:31:42.986 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:31:42.994 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:31:42.997 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:31:43.057 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:31:43.057 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:31:43.089 +08:00 [INF] Request finished in 91.3534ms 200 text/css
+2020-05-10 16:31:43.089 +08:00 [INF] Request finished in 94.5788ms 200 application/javascript
+2020-05-10 16:31:43.111 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:31:43.122 +08:00 [INF] Request finished in 136.7771ms 200 application/javascript
+2020-05-10 16:31:43.288 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:31:43.340 +08:00 [INF] Request finished in 51.6037ms 404 
+2020-05-10 16:31:43.354 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:31:43.356 +08:00 [INF] Request finished in 2.0431ms 404 
+2020-05-10 16:31:43.473 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:31:43.477 +08:00 [INF] Request finished in 4.1677ms 404 
+2020-05-10 16:31:43.481 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:31:43.483 +08:00 [INF] Request finished in 2.273ms 404 
+2020-05-10 16:31:43.564 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:31:43.704 +08:00 [INF] Request finished in 140.5548ms 200 application/json;charset=utf-8
+2020-05-10 16:32:00.961 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:32:00.996 +08:00 [INF] Request finished in 34.7649ms 307 
+2020-05-10 16:32:01.021 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:32:01.029 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:32:01.061 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:36:15.367 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:36:16.006 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:36:16.093 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:36:16.327 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:36:16.328 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:36:16.357 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:36:16.368 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:36:16.369 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:36:18.002 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:36:18.093 +08:00 [INF] Request finished in 94.3288ms 200 text/html;charset=utf-8
+2020-05-10 16:36:18.122 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:36:18.122 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:36:18.140 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:36:18.190 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:36:18.198 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:36:18.224 +08:00 [INF] Request finished in 84.1506ms 200 text/css
+2020-05-10 16:36:18.253 +08:00 [INF] Request finished in 130.7348ms 200 application/javascript
+2020-05-10 16:36:18.254 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:36:18.265 +08:00 [INF] Request finished in 142.5118ms 200 application/javascript
+2020-05-10 16:36:18.381 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:36:18.432 +08:00 [INF] Request finished in 51.0334ms 404 
+2020-05-10 16:36:18.441 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:36:18.444 +08:00 [INF] Request finished in 3.0644ms 404 
+2020-05-10 16:36:18.585 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:36:18.590 +08:00 [INF] Request finished in 4.9422ms 404 
+2020-05-10 16:36:18.594 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:36:18.596 +08:00 [INF] Request finished in 2.2953ms 404 
+2020-05-10 16:36:18.683 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:36:18.847 +08:00 [INF] Request finished in 163.7025ms 200 application/json;charset=utf-8
+2020-05-10 16:36:21.340 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:36:21.348 +08:00 [INF] Request finished in 8.7551ms 307 
+2020-05-10 16:36:21.379 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:36:21.384 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:36:21.420 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:40:17.787 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:40:19.984 +08:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:40:20.211 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:40:21.455 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:40:21.466 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:40:21.467 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:40:21.467 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:40:21.468 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:40:30.697 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:40:30.892 +08:00 [INF] Request finished in 196.6819ms 200 text/html;charset=utf-8
+2020-05-10 16:40:30.964 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:40:30.965 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:40:31.065 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:40:31.169 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:40:31.178 +08:00 [INF] Request finished in 113.441ms 200 text/css
+2020-05-10 16:40:31.181 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:40:31.197 +08:00 [INF] Request finished in 231.3907ms 200 application/javascript
+2020-05-10 16:40:31.253 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:40:31.258 +08:00 [INF] Request finished in 293.7694ms 200 application/javascript
+2020-05-10 16:40:31.496 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:40:31.757 +08:00 [INF] Request finished in 261.1657ms 404 
+2020-05-10 16:40:31.765 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:40:31.769 +08:00 [INF] Request finished in 3.1611ms 404 
+2020-05-10 16:40:31.942 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:40:31.947 +08:00 [INF] Request finished in 4.789ms 404 
+2020-05-10 16:40:31.950 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:40:31.952 +08:00 [INF] Request finished in 1.9625ms 404 
+2020-05-10 16:40:32.042 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:40:32.239 +08:00 [INF] Request finished in 196.5756ms 200 application/json;charset=utf-8
+2020-05-10 16:40:36.011 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:40:36.033 +08:00 [INF] Request finished in 21.6414ms 307 
+2020-05-10 16:40:36.060 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:40:36.064 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:40:36.222 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:41:26.090 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:41:26.691 +08:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:41:26.779 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:41:27.016 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:41:27.016 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:41:27.017 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:41:27.018 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:41:27.018 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:41:28.664 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:41:28.756 +08:00 [INF] Request finished in 94.7041ms 200 text/html;charset=utf-8
+2020-05-10 16:41:28.781 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:41:28.799 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:41:28.801 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:41:28.861 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:41:28.861 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:41:28.899 +08:00 [INF] Request finished in 97.0384ms 200 text/css
+2020-05-10 16:41:28.915 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:41:28.921 +08:00 [INF] Request finished in 121.6574ms 200 application/javascript
+2020-05-10 16:41:28.925 +08:00 [INF] Request finished in 144.6056ms 200 application/javascript
+2020-05-10 16:41:29.241 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:41:29.295 +08:00 [INF] Request finished in 54.255ms 404 
+2020-05-10 16:41:29.305 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:41:29.308 +08:00 [INF] Request finished in 3.1868ms 404 
+2020-05-10 16:41:29.678 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:41:29.685 +08:00 [INF] Request finished in 6.6075ms 404 
+2020-05-10 16:41:29.690 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:41:29.692 +08:00 [INF] Request finished in 2.4702ms 404 
+2020-05-10 16:41:29.771 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:41:29.946 +08:00 [INF] Request finished in 174.506ms 200 application/json;charset=utf-8
+2020-05-10 16:41:32.884 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:41:32.893 +08:00 [INF] Request finished in 8.5546ms 307 
+2020-05-10 16:41:32.911 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:41:32.917 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:41:32.960 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:42:14.999 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:42:15.614 +08:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:42:15.704 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:42:15.944 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:42:15.944 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:42:15.945 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:42:15.946 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:42:15.946 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:42:17.425 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:42:17.508 +08:00 [INF] Request finished in 84.1242ms 200 text/html;charset=utf-8
+2020-05-10 16:42:17.534 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:42:17.543 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:42:17.553 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:42:17.599 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:42:17.626 +08:00 [INF] Request finished in 71.845ms 200 text/css
+2020-05-10 16:42:17.628 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:42:17.634 +08:00 [INF] Request finished in 90.9312ms 200 application/javascript
+2020-05-10 16:42:17.654 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:42:17.662 +08:00 [INF] Request finished in 128.5028ms 200 application/javascript
+2020-05-10 16:42:17.830 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:42:17.883 +08:00 [INF] Request finished in 53.8357ms 404 
+2020-05-10 16:42:17.896 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:42:17.899 +08:00 [INF] Request finished in 3.0614ms 404 
+2020-05-10 16:42:18.022 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:42:18.027 +08:00 [INF] Request finished in 4.3576ms 404 
+2020-05-10 16:42:18.030 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:42:18.032 +08:00 [INF] Request finished in 1.9618ms 404 
+2020-05-10 16:42:18.114 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:42:18.262 +08:00 [INF] Request finished in 148.0282ms 200 application/json;charset=utf-8
+2020-05-10 16:42:49.204 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:42:49.223 +08:00 [INF] Request finished in 19.7478ms 307 
+2020-05-10 16:42:49.394 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:42:49.398 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:42:49.432 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:47:08.289 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:47:09.093 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:47:09.183 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:47:09.408 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:47:09.409 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:47:09.409 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:47:09.410 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:47:09.411 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:47:10.628 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:47:10.716 +08:00 [INF] Request finished in 90.5327ms 200 text/html;charset=utf-8
+2020-05-10 16:47:10.749 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:47:10.755 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:47:10.760 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:47:11.013 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:47:11.013 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:47:11.019 +08:00 [INF] Request finished in 264.1795ms 200 application/javascript
+2020-05-10 16:47:11.022 +08:00 [INF] Request finished in 263.4604ms 200 text/css
+2020-05-10 16:47:11.261 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:47:11.272 +08:00 [INF] Request finished in 522.2149ms 200 application/javascript
+2020-05-10 16:47:11.546 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:47:11.602 +08:00 [INF] Request finished in 55.9416ms 404 
+2020-05-10 16:47:11.610 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:47:11.613 +08:00 [INF] Request finished in 3.0889ms 404 
+2020-05-10 16:47:11.743 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:47:11.746 +08:00 [INF] Request finished in 3.2733ms 404 
+2020-05-10 16:47:11.750 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:47:11.752 +08:00 [INF] Request finished in 1.9416ms 404 
+2020-05-10 16:47:11.835 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:47:11.999 +08:00 [INF] Request finished in 163.9371ms 200 application/json;charset=utf-8
+2020-05-10 16:47:33.840 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:47:33.845 +08:00 [INF] Request finished in 7.0012ms 307 
+2020-05-10 16:47:33.878 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:47:33.882 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:47:33.924 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:55:09.406 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:55:10.099 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:55:10.182 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:55:10.424 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:55:10.425 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:55:10.425 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:55:10.426 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:55:10.427 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:55:11.703 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:55:11.807 +08:00 [INF] Request finished in 106.1744ms 200 text/html;charset=utf-8
+2020-05-10 16:55:11.839 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:55:11.840 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:55:11.856 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:55:11.921 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:55:11.921 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:55:11.933 +08:00 [INF] Request finished in 93.2408ms 200 application/javascript
+2020-05-10 16:55:11.933 +08:00 [INF] Request finished in 76.6373ms 200 text/css
+2020-05-10 16:55:11.954 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:55:11.967 +08:00 [INF] Request finished in 127.2279ms 200 application/javascript
+2020-05-10 16:55:12.593 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:55:12.649 +08:00 [INF] Request finished in 56.3004ms 404 
+2020-05-10 16:55:12.656 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:55:12.661 +08:00 [INF] Request finished in 2.6425ms 404 
+2020-05-10 16:55:13.327 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:55:13.336 +08:00 [INF] Request finished in 8.4084ms 404 
+2020-05-10 16:55:13.341 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:55:13.344 +08:00 [INF] Request finished in 2.9899ms 404 
+2020-05-10 16:55:13.427 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:55:13.581 +08:00 [INF] Request finished in 154.0532ms 200 application/json;charset=utf-8
+2020-05-10 16:55:22.470 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES application/json 14
+2020-05-10 16:55:22.478 +08:00 [INF] Request finished in 7.5855ms 307 
+2020-05-10 16:55:22.511 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES application/json 14
+2020-05-10 16:55:22.515 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:55:22.548 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:55:22.816 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:55:22.937 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 16:55:40.447 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 16:55:40.456 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 17897.4907ms
+2020-05-10 16:55:40.459 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 16:55:40.466 +08:00 [INF] Request finished in 17955.0169ms 200 application/json; charset=utf-8
+2020-05-10 16:56:04.248 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:56:04.984 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:56:05.064 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:56:05.287 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:56:05.288 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:56:05.288 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:56:05.289 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:56:05.289 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:56:08.036 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:56:08.134 +08:00 [INF] Request finished in 99.4213ms 200 text/html;charset=utf-8
+2020-05-10 16:56:08.163 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:56:08.168 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:56:08.181 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:56:08.251 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:56:08.251 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:56:08.279 +08:00 [INF] Request finished in 110.366ms 200 application/javascript
+2020-05-10 16:56:08.283 +08:00 [INF] Request finished in 102.3344ms 200 text/css
+2020-05-10 16:56:08.291 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:56:08.312 +08:00 [INF] Request finished in 149.7279ms 200 application/javascript
+2020-05-10 16:56:08.465 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:56:08.517 +08:00 [INF] Request finished in 52.1158ms 404 
+2020-05-10 16:56:08.527 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:56:08.530 +08:00 [INF] Request finished in 3.1413ms 404 
+2020-05-10 16:56:08.650 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:56:08.654 +08:00 [INF] Request finished in 3.881ms 404 
+2020-05-10 16:56:08.659 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:56:08.661 +08:00 [INF] Request finished in 2.5816ms 404 
+2020-05-10 16:56:08.747 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:56:08.948 +08:00 [INF] Request finished in 201.4471ms 200 application/json;charset=utf-8
+2020-05-10 16:56:12.728 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:56:12.733 +08:00 [INF] Request finished in 4.7245ms 200 text/html;charset=utf-8
+2020-05-10 16:56:12.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:56:12.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:56:12.821 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:56:12.830 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:56:12.855 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:56:12.866 +08:00 [INF] Request finished in 45.9349ms 200 application/javascript
+2020-05-10 16:56:12.857 +08:00 [INF] Request finished in 58.0591ms 200 text/css
+2020-05-10 16:56:13.144 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:56:13.149 +08:00 [INF] Request finished in 351.0526ms 200 application/javascript
+2020-05-10 16:56:13.707 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:56:13.732 +08:00 [INF] Request finished in 24.9822ms 200 application/json;charset=utf-8
+2020-05-10 16:57:34.049 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:57:34.660 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:57:34.750 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:57:35.006 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:57:35.006 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:57:35.007 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:57:35.008 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:57:35.011 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:57:36.515 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:57:36.613 +08:00 [INF] Request finished in 100.4136ms 200 text/html;charset=utf-8
+2020-05-10 16:57:36.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:57:36.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:57:36.666 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:57:36.725 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:57:36.739 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:57:36.759 +08:00 [INF] Request finished in 107.6135ms 200 application/javascript
+2020-05-10 16:57:36.759 +08:00 [INF] Request finished in 92.9769ms 200 text/css
+2020-05-10 16:57:36.771 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:57:36.792 +08:00 [INF] Request finished in 140.6175ms 200 application/javascript
+2020-05-10 16:57:36.920 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:57:36.976 +08:00 [INF] Request finished in 56.2715ms 404 
+2020-05-10 16:57:36.985 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:57:36.987 +08:00 [INF] Request finished in 1.8294ms 404 
+2020-05-10 16:57:37.186 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:57:37.192 +08:00 [INF] Request finished in 6.6768ms 404 
+2020-05-10 16:57:37.196 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:57:37.198 +08:00 [INF] Request finished in 1.9783ms 404 
+2020-05-10 16:57:37.284 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:57:37.476 +08:00 [INF] Request finished in 191.4687ms 200 application/json;charset=utf-8
+2020-05-10 16:57:39.737 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:57:39.743 +08:00 [INF] Request finished in 6.3069ms 307 
+2020-05-10 16:57:39.777 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:57:39.780 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:57:39.784 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-05-10 16:57:39.786 +08:00 [INF] Request finished in 8.8131ms 405 
+2020-05-10 16:57:49.566 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:57:49.571 +08:00 [INF] Request finished in 2.8433ms 307 
+2020-05-10 16:57:49.571 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:57:49.574 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:57:49.624 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:58:11.369 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 21736.7052ms
+2020-05-10 16:58:11.371 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:58:11.374 +08:00 [INF] Request finished in 21803.2619ms 200 
+2020-05-10 16:58:28.445 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 16:58:29.093 +08:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 16:58:29.180 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 16:58:29.416 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 16:58:29.420 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 16:58:29.421 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 16:58:29.421 +08:00 [INF] Hosting environment: Development
+2020-05-10 16:58:29.422 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 16:58:31.242 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 16:58:31.327 +08:00 [INF] Request finished in 87.2161ms 200 text/html;charset=utf-8
+2020-05-10 16:58:31.359 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 16:58:31.366 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 16:58:31.368 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 16:58:31.457 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 16:58:31.462 +08:00 [INF] Request finished in 96.1685ms 200 application/javascript
+2020-05-10 16:58:31.457 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 16:58:31.482 +08:00 [INF] Request finished in 114.5872ms 200 text/css
+2020-05-10 16:58:31.484 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 16:58:31.495 +08:00 [INF] Request finished in 135.8112ms 200 application/javascript
+2020-05-10 16:58:31.674 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:58:31.722 +08:00 [INF] Request finished in 48.1368ms 404 
+2020-05-10 16:58:31.732 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 16:58:31.734 +08:00 [INF] Request finished in 2.6194ms 404 
+2020-05-10 16:58:31.874 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:58:31.878 +08:00 [INF] Request finished in 4.5606ms 404 
+2020-05-10 16:58:31.882 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 16:58:31.885 +08:00 [INF] Request finished in 2.6003ms 404 
+2020-05-10 16:58:31.981 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 16:58:32.174 +08:00 [INF] Request finished in 192.7597ms 200 application/json;charset=utf-8
+2020-05-10 16:58:35.549 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ES/a application/json 14
+2020-05-10 16:58:35.558 +08:00 [INF] Request finished in 9.1239ms 307 
+2020-05-10 16:58:35.626 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES/a application/json 14
+2020-05-10 16:58:35.635 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:58:35.670 +08:00 [INF] Route matched with {action = "Search2", controller = "ES"}. Executing controller action with signature Void Search2(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 16:58:51.373 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search2 (myapicode) in 15689.5196ms
+2020-05-10 16:58:51.376 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search2 (myapicode)'
+2020-05-10 16:58:51.379 +08:00 [INF] Request finished in 15753.0119ms 200 
+2020-05-10 17:01:05.838 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 17:01:06.425 +08:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 17:01:06.509 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 17:01:06.736 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 17:01:06.743 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 17:01:06.744 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 17:01:06.745 +08:00 [INF] Hosting environment: Development
+2020-05-10 17:01:06.746 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 17:01:08.524 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 17:01:08.615 +08:00 [INF] Request finished in 94.865ms 200 text/html;charset=utf-8
+2020-05-10 17:01:08.644 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 17:01:08.648 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 17:01:08.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 17:01:08.731 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 17:01:08.738 +08:00 [INF] Request finished in 87.0633ms 200 text/css
+2020-05-10 17:01:08.739 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 17:01:08.785 +08:00 [INF] Request finished in 136.6994ms 200 application/javascript
+2020-05-10 17:01:08.781 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 17:01:08.810 +08:00 [INF] Request finished in 167.9168ms 200 application/javascript
+2020-05-10 17:01:08.912 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 17:01:08.959 +08:00 [INF] Request finished in 47.4638ms 404 
+2020-05-10 17:01:08.968 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 17:01:08.971 +08:00 [INF] Request finished in 2.7997ms 404 
+2020-05-10 17:01:09.194 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 17:01:09.200 +08:00 [INF] Request finished in 6.8469ms 404 
+2020-05-10 17:01:09.206 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 17:01:09.208 +08:00 [INF] Request finished in 2.1436ms 404 
+2020-05-10 17:01:09.291 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 17:01:09.474 +08:00 [INF] Request finished in 182.7293ms 200 application/json;charset=utf-8
+2020-05-10 17:01:25.534 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2020-05-10 17:01:25.537 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 17:01:25.576 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-10 17:01:25.861 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 17:01:25.945 +08:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 17:01:26.088 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-10 17:01:26.281 +08:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 17:01:26.412 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 17:01:26.482 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 892.8897ms
+2020-05-10 17:01:26.485 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 17:01:26.491 +08:00 [INF] Request finished in 957.4937ms 200 application/json; charset=utf-8
+2020-05-10 17:01:37.722 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/ES  
+2020-05-10 17:01:37.726 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 17:01:37.739 +08:00 [INF] Route matched with {action = "Index", controller = "ES"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Index() on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 17:01:37.809 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 17:01:37.820 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+2020-05-10 17:01:53.395 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-05-10 17:01:53.397 +08:00 [INF] Executed action myapicode.Controllers.ESController.Index (myapicode) in 15651.7749ms
+2020-05-10 17:01:53.451 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Index (myapicode)'
+2020-05-10 17:01:53.498 +08:00 [INF] Request finished in 15775.7761ms 200 application/json; charset=utf-8
+2020-05-10 17:02:22.066 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES?query=%E8%8B%B1  0
+2020-05-10 17:02:22.071 +08:00 [INF] CORS policy execution failed.
+2020-05-10 17:02:22.072 +08:00 [INF] Request origin https://localhost:5001 does not have permission to access the resource.
+2020-05-10 17:02:22.078 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 17:02:22.084 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 17:02:29.774 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 17:02:29.786 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 7697.5853ms
+2020-05-10 17:02:29.789 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 17:02:29.797 +08:00 [INF] Request finished in 7730.4569ms 200 application/json; charset=utf-8
+2020-05-10 17:02:51.970 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES?query=%E8%8B%B1  0
+2020-05-10 17:02:52.020 +08:00 [INF] CORS policy execution failed.
+2020-05-10 17:02:52.024 +08:00 [INF] Request origin https://localhost:5001 does not have permission to access the resource.
+2020-05-10 17:02:52.028 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 17:02:52.032 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 17:03:16.185 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 17:03:16.821 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-10 17:03:16.914 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-10 17:03:17.163 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-10 17:03:17.164 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-10 17:03:17.165 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-10 17:03:17.165 +08:00 [INF] Hosting environment: Development
+2020-05-10 17:03:17.166 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-10 17:03:18.954 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-10 17:03:19.042 +08:00 [INF] Request finished in 91.1243ms 200 text/html;charset=utf-8
+2020-05-10 17:03:19.073 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-10 17:03:19.073 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-10 17:03:19.093 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-10 17:03:19.156 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-10 17:03:19.167 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-10 17:03:19.188 +08:00 [INF] Request finished in 114.5656ms 200 application/javascript
+2020-05-10 17:03:19.175 +08:00 [INF] Request finished in 81.4682ms 200 text/css
+2020-05-10 17:03:19.215 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-10 17:03:19.220 +08:00 [INF] Request finished in 147.0414ms 200 application/javascript
+2020-05-10 17:03:19.354 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 17:03:19.408 +08:00 [INF] Request finished in 54.2968ms 404 
+2020-05-10 17:03:19.418 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-10 17:03:19.421 +08:00 [INF] Request finished in 3.1157ms 404 
+2020-05-10 17:03:19.579 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 17:03:19.589 +08:00 [INF] Request finished in 7.1357ms 404 
+2020-05-10 17:03:19.593 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-10 17:03:19.598 +08:00 [INF] Request finished in 4.5548ms 404 
+2020-05-10 17:03:19.695 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-10 17:03:19.868 +08:00 [INF] Request finished in 173.8106ms 200 application/json;charset=utf-8
+2020-05-10 17:03:43.993 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/ES?query=%E8%8B%B1  0
+2020-05-10 17:03:44.000 +08:00 [INF] CORS policy execution failed.
+2020-05-10 17:03:44.000 +08:00 [INF] Request origin https://localhost:5001 does not have permission to access the resource.
+2020-05-10 17:03:44.008 +08:00 [INF] Executing endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 17:03:44.040 +08:00 [INF] Route matched with {action = "Search", controller = "ES"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller myapicode.Controllers.ESController (myapicode).
+2020-05-10 17:03:56.027 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.PostDTO, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 17:03:56.046 +08:00 [INF] Executed action myapicode.Controllers.ESController.Search (myapicode) in 11993.8004ms
+2020-05-10 17:03:56.050 +08:00 [INF] Executed endpoint 'myapicode.Controllers.ESController.Search (myapicode)'
+2020-05-10 17:03:56.055 +08:00 [INF] Request finished in 12062.0289ms 200 application/json; charset=utf-8
+2020-05-10 17:04:09.967 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2020-05-10 17:04:09.970 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 17:04:09.988 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-10 17:04:10.047 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-10 17:04:10.082 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 17:04:10.192 +08:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-10 17:04:10.314 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-10 17:04:10.339 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-10 17:04:10.357 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 362.9232ms
+2020-05-10 17:04:10.360 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-10 17:04:10.367 +08:00 [INF] Request finished in 400.5802ms 200 application/json; charset=utf-8

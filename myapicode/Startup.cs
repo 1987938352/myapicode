@@ -17,10 +17,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using myapicode.ES;
 using myapicode.Extensions;
 using myapicode.PolicyRequirement;
-using System;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -64,6 +63,7 @@ namespace myapicode
                 //var connectionString = Configuration.GetConnectionString("DefaultConnection");
                 options.UseLazyLoadingProxies().UseMySql(connectionString);
             });
+            services.AddHttpContextAccessor();
 
             #region Ê¹ÓÃjwt
             services.AddAuthorization(o =>
@@ -71,6 +71,7 @@ namespace myapicode
                 o.AddPolicy("AdminRequireMent", o =>
                 {
                     o.Requirements.Add(new AdminRequirement() { Name = "Admin" });
+                    
                 });
             });
             services.AddSingleton<IAuthorizationHandler, MustRoleAdminHandler>();
@@ -108,7 +109,8 @@ namespace myapicode
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepositories>();
 
-            services.AddHttpContextAccessor();
+            services.AddSingleton<IESSever, ESSever>();
+
             services.AddAutoMapper(Assembly.Load("myapicode").GetTypes().Where(type => type.IsSubclassOf(typeof(Profile)) && !type.IsAbstract).ToArray());
 
             services.AddTransient<IValidator<PostAddResource>, PostAddOrUpdateResourceValidator<PostAddResource>>();

@@ -62,6 +62,7 @@ namespace myapicode.Controllers
         [HttpGet(Name = "GetPosts")]
         public async Task<IActionResult> Get([FromQuery]PostParameters postParameters)
         {
+          
             //throw new Exception("Error!!");
             //var v = configuration["key1"];
             //logger.LogError("Get ALl Post...");
@@ -104,7 +105,7 @@ namespace myapicode.Controllers
             var meta = new
             {
                 Pagesize = postList.PageSize,
-                PageIndex = postList.PageIndex,
+                PageIndex = postList.PageIndex,     
                 TotalItemsCount = postList.TotalItemsCount,
                 PageCount = postList.PageCount
                 //,

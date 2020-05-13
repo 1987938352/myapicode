@@ -33,6 +33,17 @@ namespace infrastructure.Repositories
             return user;
 
         }
+        public User  Register(string pwd)
+        {
+            User user = new User()
+            {
+                PassWord = pwd,
+                Name = "name"//名字这里我直接定死了
+            };
+            myContext.User.Add(user);
+            myContext.SaveChanges();
+            return user;
+        }
 
 
     }

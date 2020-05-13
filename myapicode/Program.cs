@@ -44,6 +44,8 @@ namespace myapicode
             }
 
             host.Run();
+
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

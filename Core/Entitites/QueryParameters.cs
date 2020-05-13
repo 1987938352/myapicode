@@ -8,7 +8,7 @@ using System.Text;
 namespace Core.Entitites
 {
     public abstract class QueryParameters : INotifyPropertyChanged
-    {
+    { 
         private const int DefaultPageSize = 10;
         private const int DefaultMaxPageSize = 100;
 

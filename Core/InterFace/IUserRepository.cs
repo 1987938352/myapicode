@@ -9,7 +9,7 @@ namespace Core.InterFace
   public  interface IUserRepository
     {
         Task<User> Login(int Id, string pwd);
-
+        User Register(string pwd);
 
     }
 }

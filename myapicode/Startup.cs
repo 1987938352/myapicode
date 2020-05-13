@@ -20,6 +20,7 @@ using Microsoft.OpenApi.Models;
 using myapicode.ES;
 using myapicode.Extensions;
 using myapicode.PolicyRequirement;
+using StackExchange.Redis;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -121,7 +122,8 @@ namespace myapicode
             services.AddSingleton<IPropertyMappingContainer>(propertyMappingContainer);
 
             services.AddTransient<ITypeHelperService, TypeHelperService>();
-         
+
+            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost"));
             #region jwt 学习 先通过bearer认证 再注册jwrbearer服务
             //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();//紧张net core对jwt的进行配置映射 
 

@@ -1,0 +1,330 @@
+2020-05-13 00:07:01.415 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 00:07:02.035 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-13 00:07:02.126 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-13 00:07:02.366 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-13 00:07:02.372 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-13 00:07:02.372 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-13 00:07:02.373 +08:00 [INF] Hosting environment: Development
+2020-05-13 00:07:02.374 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-13 00:07:04.083 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-13 00:07:04.163 +08:00 [INF] Request finished in 81.7373ms 200 text/html;charset=utf-8
+2020-05-13 00:07:04.187 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-13 00:07:04.187 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-13 00:07:04.208 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-13 00:07:04.270 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-13 00:07:04.276 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-13 00:07:04.285 +08:00 [INF] Request finished in 98.8825ms 200 application/javascript
+2020-05-13 00:07:04.292 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-13 00:07:04.298 +08:00 [INF] Request finished in 110.6221ms 200 application/javascript
+2020-05-13 00:07:04.294 +08:00 [INF] Request finished in 85.5059ms 200 text/css
+2020-05-13 00:07:04.443 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-13 00:07:04.498 +08:00 [INF] Request finished in 55.211ms 404 
+2020-05-13 00:07:04.508 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-13 00:07:04.510 +08:00 [INF] Request finished in 2.0292ms 404 
+2020-05-13 00:07:04.633 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-13 00:07:04.637 +08:00 [INF] Request finished in 3.9067ms 404 
+2020-05-13 00:07:04.642 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-13 00:07:04.644 +08:00 [INF] Request finished in 1.9225ms 404 
+2020-05-13 00:07:04.730 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-13 00:07:04.871 +08:00 [INF] Request finished in 141.0387ms 200 application/json;charset=utf-8
+2020-05-13 00:07:57.482 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1 application/json 50
+2020-05-13 00:07:57.741 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-13 00:07:57.773 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2020-05-13 00:07:57.776 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 00:07:57.814 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 00:08:04.052 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 00:08:04.182 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+WHERE `p`.`Id` = @__p_0
+LIMIT 1
+2020-05-13 00:08:07.055 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2020-05-13 00:08:07.073 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 9248.4165ms
+2020-05-13 00:08:07.076 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 00:08:07.081 +08:00 [INF] Request finished in 9599.1653ms 200 application/json; charset=utf-8
+2020-05-13 00:08:10.342 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1 application/json 50
+2020-05-13 00:08:10.348 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-13 00:08:10.358 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2020-05-13 00:08:10.379 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 00:08:10.382 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 00:08:24.244 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2020-05-13 00:08:24.247 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 13862.3423ms
+2020-05-13 00:08:24.250 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 00:08:24.253 +08:00 [INF] Request finished in 13912.1888ms 200 application/json; charset=utf-8
+2020-05-13 17:21:32.494 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 17:21:34.035 +08:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Post` AS `p`)
+2020-05-13 17:21:34.328 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-13 17:21:35.545 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-13 17:21:35.546 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-13 17:21:35.547 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-13 17:21:35.547 +08:00 [INF] Hosting environment: Development
+2020-05-13 17:21:35.548 +08:00 [INF] Content root path: C:\Users\Administrator\source\repos\myapicode\myapicode
+2020-05-13 17:21:50.164 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-13 17:21:50.789 +08:00 [INF] Request finished in 627.4146ms 200 text/html;charset=utf-8
+2020-05-13 17:21:51.025 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-05-13 17:21:51.026 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-05-13 17:21:51.064 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-05-13 17:21:51.136 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-13 17:21:51.143 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-13 17:21:51.148 +08:00 [INF] Request finished in 122.6268ms 200 application/javascript
+2020-05-13 17:21:51.148 +08:00 [INF] Request finished in 84.7943ms 200 text/css
+2020-05-13 17:21:51.201 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-13 17:21:51.204 +08:00 [INF] Request finished in 178.6932ms 200 application/javascript
+2020-05-13 17:21:51.458 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-13 17:21:51.593 +08:00 [INF] Request finished in 134.6242ms 404 
+2020-05-13 17:21:51.603 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-bundle.js.map  
+2020-05-13 17:21:51.606 +08:00 [INF] Request finished in 2.6798ms 404 
+2020-05-13 17:21:51.725 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-13 17:21:51.728 +08:00 [INF] Request finished in 2.8312ms 404 
+2020-05-13 17:21:51.737 +08:00 [INF] Request starting HTTP/1.1 GET https://127.0.0.1:5001/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-13 17:21:51.738 +08:00 [INF] Request finished in 1.3877ms 404 
+2020-05-13 17:21:51.874 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-13 17:21:51.896 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-05-13 17:21:51.919 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-13 17:21:51.924 +08:00 [INF] Request finished in 28.8746ms 200 image/png
+2020-05-13 17:21:52.064 +08:00 [INF] Request finished in 190.9087ms 200 application/json;charset=utf-8
+2020-05-13 17:22:58.792 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 17:22:58.801 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:22:58.804 +08:00 [INF] Request finished in 11.2895ms 204 
+2020-05-13 17:22:58.806 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 17:22:58.808 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:22:58.811 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:22:58.937 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 17:22:59.937 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 17:23:01.374 +08:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:01.486 +08:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 17:23:01.621 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:01.810 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 17:23:01.848 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 2903.1045ms
+2020-05-13 17:23:01.849 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:23:01.853 +08:00 [INF] Request finished in 3047.5791ms 200 application/json; charset=utf-8
+2020-05-13 17:23:03.443 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=1&pageSize=9&orderBy=id+asc  
+2020-05-13 17:23:03.445 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:23:03.446 +08:00 [INF] Request finished in 3.5299ms 204 
+2020-05-13 17:23:03.452 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=9&orderBy=id+asc  
+2020-05-13 17:23:03.453 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:23:03.457 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:23:03.458 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 17:23:03.473 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 17:23:03.484 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:03.495 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_0 OFFSET @__p_0
+2020-05-13 17:23:03.502 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:03.505 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 17:23:03.508 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 48.2767ms
+2020-05-13 17:23:03.509 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:23:03.510 +08:00 [INF] Request finished in 58.758ms 200 application/json; charset=utf-8
+2020-05-13 17:23:03.826 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=2&pageSize=9&orderBy=id+asc  
+2020-05-13 17:23:03.829 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:23:03.830 +08:00 [INF] Request finished in 4.4059ms 204 
+2020-05-13 17:23:03.834 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=2&pageSize=9&orderBy=id+asc  
+2020-05-13 17:23:03.836 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:23:03.838 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:23:03.840 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 17:23:03.848 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 17:23:03.860 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:03.867 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 17:23:03.876 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:23:03.878 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 17:23:03.883 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 40.6212ms
+2020-05-13 17:23:03.884 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:23:03.885 +08:00 [INF] Request finished in 51.0211ms 200 application/json; charset=utf-8
+2020-05-13 17:28:00.705 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 17:28:00.720 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:28:00.724 +08:00 [INF] Request finished in 18.5883ms 204 
+2020-05-13 17:28:00.744 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 17:28:00.747 +08:00 [INF] CORS policy execution successful.
+2020-05-13 17:28:00.748 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:28:00.750 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 17:28:00.758 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 17:28:00.779 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:28:00.784 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 17:28:00.789 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 17:28:00.792 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 17:28:00.794 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 43.0753ms
+2020-05-13 17:28:00.795 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 17:28:00.796 +08:00 [INF] Request finished in 52.1097ms 200 application/json; charset=utf-8
+2020-05-13 18:02:15.220 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 18:02:15.221 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:15.222 +08:00 [INF] Request finished in 1.5912ms 204 
+2020-05-13 18:02:15.223 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 18:02:15.224 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:15.225 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:15.226 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:15.229 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:15.244 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:15.252 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 18:02:15.256 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:15.259 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:15.261 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 33.6193ms
+2020-05-13 18:02:15.262 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:15.263 +08:00 [INF] Request finished in 40.3895ms 200 application/json; charset=utf-8
+2020-05-13 18:02:20.643 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 18:02:20.644 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:20.646 +08:00 [INF] Request finished in 3.1597ms 204 
+2020-05-13 18:02:20.650 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id  
+2020-05-13 18:02:20.651 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:20.653 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:20.656 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:20.662 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:20.708 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:20.719 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 18:02:20.729 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:20.731 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:20.733 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 74.4582ms
+2020-05-13 18:02:20.734 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:20.734 +08:00 [INF] Request finished in 84.7313ms 200 application/json; charset=utf-8
+2020-05-13 18:02:24.420 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=1&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:24.420 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:24.421 +08:00 [INF] Request finished in 1.0813ms 204 
+2020-05-13 18:02:24.423 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:24.424 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:24.427 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:24.428 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:24.432 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:24.439 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:24.445 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_0 OFFSET @__p_0
+2020-05-13 18:02:24.450 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:24.451 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:24.453 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 23.1417ms
+2020-05-13 18:02:24.454 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:24.455 +08:00 [INF] Request finished in 31.693ms 200 application/json; charset=utf-8
+2020-05-13 18:02:24.979 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=2&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:24.981 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:24.982 +08:00 [INF] Request finished in 3.0105ms 204 
+2020-05-13 18:02:24.984 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=2&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:24.984 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:24.985 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:24.987 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:24.990 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:24.997 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.002 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 18:02:25.009 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.011 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:25.013 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 24.7035ms
+2020-05-13 18:02:25.014 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:25.015 +08:00 [INF] Request finished in 31.4775ms 200 application/json; charset=utf-8
+2020-05-13 18:02:25.315 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:25.316 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:25.317 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:25.318 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:25.321 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:25.327 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.330 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_0 OFFSET @__p_0
+2020-05-13 18:02:25.335 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.337 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:25.338 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 18.7265ms
+2020-05-13 18:02:25.339 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:25.339 +08:00 [INF] Request finished in 24.6691ms 200 application/json; charset=utf-8
+2020-05-13 18:02:25.931 +08:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:25.931 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:25.932 +08:00 [INF] Request finished in 1.4731ms 204 
+2020-05-13 18:02:25.933 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=9&orderBy=id+asc  
+2020-05-13 18:02:25.934 +08:00 [INF] CORS policy execution successful.
+2020-05-13 18:02:25.935 +08:00 [INF] Executing endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:25.936 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Core.Entitites.PostParameters) on controller myapicode.Controllers.PostController (myapicode).
+2020-05-13 18:02:25.940 +08:00 [INF] Entity Framework Core 3.1.3 initialized 'MyContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: using lazy-loading proxies 
+2020-05-13 18:02:25.956 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.960 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Author`, `p`.`Body`, `p`.`CastModified`, `p`.`Title`
+FROM `Post` AS `p`
+ORDER BY `p`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-05-13 18:02:25.963 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Post` AS `p`
+2020-05-13 18:02:25.965 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[infrastructure.DTO.LinkResource, infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-05-13 18:02:25.966 +08:00 [INF] Executed action myapicode.Controllers.PostController.Get (myapicode) in 28.3559ms
+2020-05-13 18:02:25.967 +08:00 [INF] Executed endpoint 'myapicode.Controllers.PostController.Get (myapicode)'
+2020-05-13 18:02:25.968 +08:00 [INF] Request finished in 34.0932ms 200 application/json; charset=utf-8

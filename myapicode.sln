@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure", "infrastructure\infrastructure.csproj", "{E6BF6733-AC67-4433-98F3-6A8DE8E79D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testToken", "testToken\testToken.csproj", "{EBE7F84B-7E31-4E6E-913B-60787A3BFF79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testToken", "testToken\testToken.csproj", "{EBE7F84B-7E31-4E6E-913B-60787A3BFF79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailPost", "EmailPost\EmailPost.csproj", "{1A1BD1CF-3627-4393-82B4-D527CC4FC8F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EBE7F84B-7E31-4E6E-913B-60787A3BFF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBE7F84B-7E31-4E6E-913B-60787A3BFF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBE7F84B-7E31-4E6E-913B-60787A3BFF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1BD1CF-3627-4393-82B4-D527CC4FC8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1BD1CF-3627-4393-82B4-D527CC4FC8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1BD1CF-3627-4393-82B4-D527CC4FC8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1BD1CF-3627-4393-82B4-D527CC4FC8F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

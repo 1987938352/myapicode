@@ -5,6 +5,7 @@ using infrastructure.DTO;
 using infrastructure.Extensions;
 using infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Connections.Features;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -14,10 +15,14 @@ using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace myapicode.Controllers
@@ -35,7 +40,9 @@ namespace myapicode.Controllers
         private readonly LinkGenerator generator;
         private readonly ITypeHelperService typeHelperService;
         private readonly IPropertyMappingContainer propertyMappingContainer;
+        private readonly IConnectionMultiplexer redis;
         private readonly ILogger logger;
+        private readonly IDatabase db;
 
         public PostController(
             IPostRepository postRepository,
@@ -46,7 +53,9 @@ namespace myapicode.Controllers
             IHttpContextAccessor accessor,
              LinkGenerator generator,
              ITypeHelperService typeHelperService,
-             IPropertyMappingContainer propertyMappingContainer)
+             IPropertyMappingContainer propertyMappingContainer,
+             IConnectionMultiplexer redis
+             )
         {
             this.postRepository = postRepository;
             this.unitOfWork = unitOfWork;
@@ -56,25 +65,47 @@ namespace myapicode.Controllers
             this.generator = generator;
             this.typeHelperService = typeHelperService;
             this.propertyMappingContainer = propertyMappingContainer;
+            this.redis = redis;
+            this.db = redis.GetDatabase();
             this.logger = loggerFactory.CreateLogger("Blog Api Controller.PostController");
-        }
+        }       
 
         [HttpGet(Name = "GetPosts")]
         public async Task<IActionResult> Get([FromQuery]PostParameters postParameters)
         {
-          
+
             //throw new Exception("Error!!");
             //var v = configuration["key1"];
             //logger.LogError("Get ALl Post...");
-            if (!typeHelperService.TypeHasProperties<PostDTO>(postParameters.Fields))
-            {
-                return BadRequest("Fields not exists");//400错误
-            }
-            if (!propertyMappingContainer.ValidateMappingExistsFor<PostDTO, Post>(postParameters.OrderBy))
-            {
-                return BadRequest("Fields not exists");
-            }
-            var postList = await postRepository.GetAllPostsAsync(postParameters);
+
+            PaginatedList<Post> postList = null;
+
+
+            //string dbKey = $"api/Post?title={postParameters.Title}&pageIndex={postParameters.PageIndex}&pageSize={postParameters.PageSize}&orderBy={postParameters.OrderBy}&fields={postParameters.Fields}";
+            //Newtonsoft.Json.JsonSerializer jsonSerializer = new Newtonsoft.Json.JsonSerializer();
+            //if (db.KeyExists(dbKey))
+            //{
+            //    var resStr = db.StringGet(dbKey);
+            //    var resStrEncoding = Encoding.UTF8.GetString(resStr);
+            //    var res = JsonConvert.DeserializeObject<PaginatedList<Post>>(resStr);
+            //}
+            //else
+            //{
+                if (!typeHelperService.TypeHasProperties<PostDTO>(postParameters.Fields))
+                {
+                    return BadRequest("Fields not exists");//400错误
+                }
+                if (!propertyMappingContainer.ValidateMappingExistsFor<PostDTO, Post>(postParameters.OrderBy))
+                {
+                    return BadRequest("Fields not exists");
+                }
+                postList = await postRepository.GetAllPostsAsync(postParameters);
+            //    var objStr = JsonConvert.SerializeObject(postList);
+            //    byte[] bytes = Encoding.UTF8.GetBytes(objStr);
+            //    db.StringSet(dbKey, bytes, TimeSpan.FromMinutes(5));
+            //}
+
+          
             var postDTO = mapper.Map<IEnumerable<Post>, IEnumerable<PostDTO>>(postList);
 
             var result = postDTO.ToDynamicIEnumerable(postParameters.Fields);
@@ -126,8 +157,21 @@ namespace myapicode.Controllers
             {
                 return BadRequest("Fields not exists");//400错误
             }
+            string key = $"api/post/id={id}";
+            Post post = null;
+            if (db.KeyExists(key))
+            {
+                HashEntry[] hashEntries = db.HashGetAll(key);
+                post = RedisHelper.ConvertFromRedis<Post>(hashEntries);
+            }
+            else
+            {
+                 post = await postRepository.GetPostByIdAsync(id);
+                HashEntry[] hashEntries = RedisHelper.ToHashEnties(post);
+                db.HashSet(key, hashEntries);
+            }
 
-            var post = await postRepository.GetPostByIdAsync(id);
+          
             if (post == null)
             {
                 return NotFound();
@@ -332,5 +376,11 @@ namespace myapicode.Controllers
             return links;
         }
 
+    }
+
+    public class MyClass
+    {
+        public MyLogin MyLogin { get; set; }
+        public int Age { get; set; }
     }
 }
